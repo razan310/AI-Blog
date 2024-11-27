@@ -8,7 +8,8 @@ export default {
         text: '#98989A',       
         Black_15:'#262626',
         myYellow: '#FFD11A',
-        myRed:'#FF5500'
+        myRed:'#FF5500',
+     
       },
     },
     fontFamily: {
