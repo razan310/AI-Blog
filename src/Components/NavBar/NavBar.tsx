@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import img1 from "./../../assets/icon/Group.svg";
 import img2 from "./../../assets/icon//Icon.svg";
-import img3 from "./../../assets/icon/Icon (20).svg";
+import img3 from "./../../assets/icon/Icon(20).svg";
 
 interface LinkItem {
   text: string;
