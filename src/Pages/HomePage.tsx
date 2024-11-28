@@ -1,3 +1,4 @@
+import CardSection from "../Components/RK_Hero/CardSection";
 import Hero from "../Components/RK_Hero/Hero";
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
         resourceText="Explore 1000+ resources"
         resourceDescription="Over 1,000 articles on emerging tech trends and breakthroughs."
       />
+      <CardSection/>
     </div>
   );
 };
