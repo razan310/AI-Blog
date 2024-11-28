@@ -1,9 +1,10 @@
 
 
+
 const BlogOpenPage = () => {
   return (
     <div>
-      BlogOpenPage
+     BlogOpenPage
     </div>
   )
 }

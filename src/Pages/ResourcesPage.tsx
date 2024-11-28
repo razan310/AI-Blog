@@ -1,9 +1,10 @@
 
 
+
 const ResourcesPage = () => {
   return (
     <div>
-      ResourcesPage
+   ResourcesPage
     </div>
   )
 }
