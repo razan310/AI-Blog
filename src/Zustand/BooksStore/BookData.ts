@@ -6,17 +6,17 @@ import book5 from "./../../assets/images/ResourcesPage/book1.png"
 import book6 from "./../../assets/images/ResourcesPage/book2.png"
 import book7 from "./../../assets/images/ResourcesPage/book3.png"
 
-import logo1 from "./../../assets/icon/Icon (9).svg"
-import logo2 from "./../../assets/icon/Icon (10).svg"
-import logo3 from "./../../assets/icon/Icon (16).svg"
-import logo4 from "./../../assets/icon/Icon (17).svg"
+// import logo1 from "./../../assets/icon/Icon(9).svg"
+// import logo2 from "./../../assets/icon/Icon(10).svg"
+// import logo3 from "./../../assets/icon/Icon(16).svg"
+// import logo4 from "./../../assets/icon/Icon(17).svg"
 
 
 
   
-interface Book {
+export interface Book{
     id: string; // معرف فريد لكل كتاب
-    logo: string; // رابط أو مسار صورة الشعار
+    // logo: string; // رابط أو مسار صورة الشعار
     logoTitle: string; // عنوان الشعار
     logoDescription: string; // شرح عنوان الشعار
     
@@ -34,7 +34,7 @@ interface Book {
   export const books: Book[] = [
     {
       id: "1",
-      logo: logo1,
+      // logo: logo1,
       logoTitle: "Ebooks",
       logoDescription: "Explore our collection of ebooks covering a wide spectrum of future technology topics.",
       downloadLink: "https://example.com/js-book.pdf",
@@ -49,7 +49,7 @@ interface Book {
     },
     {
         id: "2",
-        logo: logo2,
+        // logo: logo2,
         logoTitle: "Whitepapers",
         logoDescription: "Dive into comprehensive reports and analyses with our collection of whitepapers. ",
         downloadLink: "https://example.com/js-book.pdf",
@@ -64,7 +64,7 @@ interface Book {
       },
       {
         id: "3",
-        logo: logo3,
+        // logo: logo3,
         logoTitle: "Quantum Computing Whitepaper",
         logoDescription: "Provides technical specifications and requirements for implementing quantum computing systems.",
         downloadLink: "https://example.com/js-book.pdf",
@@ -79,7 +79,7 @@ interface Book {
       },
       {
         id: "4",
-        logo: logo4,
+        // logo: logo4,
         logoTitle: "Space Exploration Whitepaper",
         logoDescription: "Explores Mars colonization, asteroid resource potential, and space tourism.",
         downloadLink: "https://example.com/js-book.pdf",
@@ -95,7 +95,7 @@ interface Book {
 
       {
         id: "5",
-        logo: "/images/logo1.png",
+        // logo: "/images/logo1.png",
         logoTitle: "Space Exploration Whitepaper",
         logoDescription: "Explores Mars colonization, asteroid resource potential, and space tourism.",
         downloadLink: "https://example.com/js-book.pdf",
@@ -111,7 +111,7 @@ interface Book {
 
       {
         id: "6",
-        logo: "/images/logo1.png",
+        // logo: "/images/logo1.png",
         logoTitle: "Space Exploration Whitepaper",
         logoDescription: "Explores Mars colonization, asteroid resource potential, and space tourism.",
         downloadLink: "https://example.com/js-book.pdf",
@@ -127,7 +127,7 @@ interface Book {
 
       {
         id: "7",
-        logo: "/images/logo1.png",
+        // logo: "/images/logo1.png",
         logoTitle: "Space Exploration Whitepaper",
         logoDescription: "Explores Mars colonization, asteroid resource potential, and space tourism.",
         downloadLink: "https://example.com/js-book.pdf",
