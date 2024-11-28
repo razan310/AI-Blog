@@ -1,4 +1,4 @@
-import CounterSection from "../Counter/CounterSection";
+import CounterSection from "../RK_Counter/CounterSection";
 import img from "./../../assets/images/HomePage/heroLayer.png";
 import icon from "./../../assets/icon/Icon.svg";
 import Button from "../RK_Button/Button";
