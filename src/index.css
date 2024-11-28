@@ -6,4 +6,39 @@
   body {
     @apply bg-background text-text;
   }
+
+  /* إضافة كلاس حاوية مع padding */
+  .container-padding {
+    @apply px-[16px]; /* padding الافتراضي لجميع الأحجام */
+  }
+
+  @media (min-width: 640px) { /* شاشات sm */
+    .container-padding {
+      @apply px-[16px]; 
+    }
+  }
+
+  @media (min-width: 768px) { /* شاشات md */
+    .container-padding {
+      @apply px-[16px];
+    }
+  }
+
+  @media (min-width: 1024px) { /* شاشات lg */
+    .container-padding {
+      @apply px-[16px];
+    }
+  }
+
+  @media (min-width: 1280px) { /* شاشات xl */
+    .container-padding {
+      @apply px-[80px]; /* padding لـ xl */
+    }
+  }
+
+  @media (min-width: 1536px) { /* شاشات 2xl */
+    .container-padding {
+      @apply px-[162px]; /* padding لـ 2xl */
+    }
+  }
 }

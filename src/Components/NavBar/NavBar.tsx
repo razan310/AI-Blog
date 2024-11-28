@@ -25,7 +25,7 @@ const NavBar: React.FC = () => {
 
   return (
     <nav>
-      <div className="bg-[#141414] flex text-[#98989A] text-lg justify-center font-normal gap-2.5 px-6 py-3  ">
+      <div className="bg-[#141414] flex text-[#98989A] text-lg justify-center font-normal gap-2.5 px-6 py-3 ">
         <span>
           Subscribe to our Newsletter For New & latest Blogs and Resources{" "}
         </span>

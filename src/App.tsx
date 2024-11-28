@@ -15,11 +15,11 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/AI-Blog" element={<HomePage />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/blog" element={<BlogOpenPage />} />
-          <Route path="/podcasts" element={<PodcastsPage />} />
-          <Route path="/resources" element={<ResourcesPage />} />
-          <Route path="/Contact" element={<ContactPage />} />
+          <Route path="/AI-Blog/news" element={<NewsPage />} />
+          <Route path="/AI-Blog/blog" element={<BlogOpenPage />} />
+          <Route path="/AI-Blog/podcasts" element={<PodcastsPage />} />
+          <Route path="/AI-Blog/resources" element={<ResourcesPage />} />
+          <Route path="/AI-Blog/Contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} /> {/* صفحة الخطأ 404 */}
         </Routes>
       </BrowserRouter>
