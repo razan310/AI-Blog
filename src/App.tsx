@@ -7,6 +7,8 @@ import ResourcesPage from "./Pages/ResourcesPage";
 import ContactPage from "./Pages/ContactPage";
 import NotFoundPage from "./Pages/NotFoundPage";
 import NavBar from "./Components/NavBar/NavBar";
+import Footer from "./Components/Footer/Footer";
+import TechRevolution from "./Components/TechRevolution/TechRevolution";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/Contact" element={<ContactPage />} />
           <Route path="*" element={<NotFoundPage />} /> {/* صفحة الخطأ 404 */}
         </Routes>
+        <TechRevolution/>
+        <Footer/>
       </BrowserRouter>
     </>
   );
