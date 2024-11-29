@@ -9,7 +9,6 @@ export default {
         Black_15:'#262626',
         myYellow: '#FFD11A',
         myRed:'#FF5500',
-        Yllow10:"#FFD119",
      
       },
     },
@@ -19,5 +18,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+};

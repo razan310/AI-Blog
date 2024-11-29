@@ -5,7 +5,7 @@ import icon4 from "./../../assets/icon/Icon.svg";
 const Footer = () => {
   return (
     <>
-      <div className="xl:px-[142px] lg:px-[100px] px-[40px] py-20 bg-[#141414] lg:max-h-[567px]   w-fill xl:px-18 ">
+      <div className="container-padding px-[40px] py-20 bg-[#141414] lg:max-h-[567px] w-fill  ">
         <div className="lg:pt-8 grid grid-cols-1 ">
           <div className=" gap-20 lg:max-h-[464px] grid xl:grid-cols-5 md:grid-cols-3 sm:grid grid-cols-2  ">
             <div>

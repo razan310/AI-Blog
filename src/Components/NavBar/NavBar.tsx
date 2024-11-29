@@ -25,14 +25,14 @@ const NavBar: React.FC = () => {
 
   return (
     <nav>
-      <div className="bg-[#141414] border-y border-Black_15 flex text-[#98989A] text-lg justify-center font-normal gap-2.5 px-6 py-3 sm:p-66  ">
+      <div className="bg-[#141414] flex text-[#98989A] text-lg justify-center font-normal gap-2.5 px-6 py-3  ">
         <span>
           Subscribe to our Newsletter For New & latest Blogs and Resources{" "}
         </span>
         <img src={img2} alt="ArrowUpRight" width={20} height={20} />
       </div>
 
-      <div className="bg-[#1A1A1A] h-[103px] py-6 px-[30px] lg:px-[150px] xl:px-[250px] flex items-center justify-between  relative">
+      <div className="bg-[#1A1A1A] h-[103px] py-6 px-[30px] container-padding flex items-center justify-between  relative">
         <Link to="/" className="shrink-0 flex  ">
           <img src={img1} alt="website logo" width={50} height={50} />
           <h3 className="ml-2 mt-3 text-white text-lg">FutureTech</h3>
