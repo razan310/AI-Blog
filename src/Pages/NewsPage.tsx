@@ -1,9 +1,10 @@
 
 
+
 const NewsPage = () => {
   return (
     <div>
-      NewsPage
+    NewsPage
     </div>
   )
 }
