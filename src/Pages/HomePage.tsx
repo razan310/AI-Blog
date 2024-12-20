@@ -1,10 +1,12 @@
+import Article from "../Components/Article/Article"
+import Testimonials from "../Components/Testimonials/Testimonials"
 
 const HomePage = () => {
   return (
     <div>
     
-    HomePage
-   
+   <Article/>
+   <Testimonials/>
     </div>
   )
 }
