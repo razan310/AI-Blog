@@ -2,7 +2,7 @@ import img1 from "./../../assets/icon/Group.svg";
 import icon from "./../../assets/icon/Icon(21).svg";
 const TechRevolution = () => {
   return (
-    <div className=" bg-[#1A1A1A] container-padding py-[30px] px-[30px]     ">
+    <div className=" bg-[#1A1A1A] container-padding py-[30px]">
       <div className="  md:flex-row  lg:flex lg:items-center lg:justify-start gap-20   ">
         <div className="flex items-center  gap-11  ">
           <img
