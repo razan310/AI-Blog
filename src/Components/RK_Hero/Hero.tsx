@@ -51,13 +51,13 @@ const Hero: React.FC<HeroProps> = ({
       <div className="flex flex-col lg:w-7/12 lg:h-[755px]">
         {/* النصوص */}
         <div className="container-padding flex-grow flex flex-col justify-center my-4 md:my-8 2xl:pr-12 2xl:pl-40">
-          <p className="font-Kumbh font-medium text-xl lg:text-3xl text-myGray">
+          <p className="font-Kumbh font-medium text-xl lg:text-2xl text-myGray text-[#666666]">
             {subtitle}
           </p>
-          <h1 className="font-Kumbh font-medium text-3xl md:text-5xl lg:text-7xl text-white leading-tight md:my-4">
+          <h1 className="font-Kumbh font-medium text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl text-white leading-tight md:my-4">
             {title}
           </h1>
-          <p className="font-Inter font-normal text-sm md:text-base lg:text-lg text-myGray ">
+          <p className="font-Inter font-normal text-sm md:text-base 2xl:text-lg text-[#7E7E81] ">
             {description}
           </p>
         </div>
