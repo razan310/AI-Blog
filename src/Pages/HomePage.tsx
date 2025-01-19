@@ -1,9 +1,14 @@
+
 import CardSection from "../Components/RK_Hero/CardSection";
 import Hero from "../Components/RK_Hero/Hero";
+import Article from "../Components/Article/Article"
+import Testimonials from "../Components/Testimonials/Testimonials"
+
 
 const HomePage = () => {
   return (
     <div>
+
       <Hero
         title="Explore the Frontiers of Artificial Intelligence"
         subtitle="Your Journey to Tomorrow Begins Here"
@@ -12,6 +17,11 @@ const HomePage = () => {
         resourceDescription="Over 1,000 articles on emerging tech trends and breakthroughs."
       />
       <CardSection/>
+
+    
+   <Article/>
+   <Testimonials/>
+
     </div>
   );
 };

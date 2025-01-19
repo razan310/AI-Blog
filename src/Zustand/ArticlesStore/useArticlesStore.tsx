@@ -5,7 +5,6 @@ interface ArticleStore {
   articles: Article[];
   getArticleById: (id: string) => Article | undefined;
   incrementLikes: (id: string) => void;
-  decrementLikes: (id: string) => void;
 }
 
 const useStore = create<ArticleStore>((set) => ({
@@ -17,16 +16,7 @@ const useStore = create<ArticleStore>((set) => ({
     set((state) => ({
       articles: state.articles.map((article) =>
         article.id === id
-          ? { ...article, likes: article.likes + 1 }
-          : article
-      ),
-    }));
-  },
-  decrementLikes: (id: string) => {
-    set((state) => ({
-      articles: state.articles.map((article) =>
-        article.id === id
-          ? { ...article, likes: article.likes > 0 ? article.likes - 1 : 0 } // التأكد من عدم الوصول إلى قيمة سالبة
+          ? { ...article, likes: article.likes - 1 ? article.likes + 1 : 0}
           : article
       ),
     }));
