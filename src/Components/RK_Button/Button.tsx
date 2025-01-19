@@ -9,18 +9,15 @@ interface ButtonProps {
       <div>
         <button
           onClick={() => (window.location.href = href)}
-          style={{
-            padding: "16px 24px", // 16px للأعلى والأسفل و 24px لليمين واليسار
-          }}
-          className="mt-3 flex items-center text-white rounded-lg font-semibold shadow-md border border-neutral-800 transition"
+          className="mt-3 flex items-center text-white px-6 py-4 rounded-lg font-semibold shadow-md border border-neutral-800 transition"
         >
           {text}
           <img src={icon} alt="Icon" className="ml-2" />
         </button>
       </div>
+      
     );
   };
-  
   
   export default Button;
   
