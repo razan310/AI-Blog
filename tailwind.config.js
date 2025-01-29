@@ -16,6 +16,9 @@ export default {
       Kumbh: ["Kumbh Sans", "sans-serif"],
       Inter: ["Inter", "serif"],
     },
+    backgroundImage: {
+      'linear-gradient': "linear-gradient(180deg, rgba(20, 20, 20, 0) -50.48%, #1a1a1a 98.11% )",
+    },
   },
   plugins: [],
 };

@@ -1,19 +1,17 @@
 
-import { useState } from "react";
+
 import useStore from "../../Zustand/ArticlesStore/useArticlesStore"
+import { Link } from "react-router-dom";
+import NoData from "../NoData/NoData";
 
 
 export default function Articles() {
-    const { articles, incrementLikes } = useStore();
+    const {  filteredArticle, incrementLikes , getArticleById, filterByType} = useStore();
     
-    const [selectedType, setSelectedType] = useState("All");
-    const filteredArticles = selectedType === "All"
-        ? articles
-        : articles.filter((article: { articleType: string; }) => article.articleType === selectedType);
 
     return (
         <section>
-            <div className="flex justify-around items-center w-full bg-[#1A1A1A] p-[120px] border border-b-0 border-Black_15
+            <div className="flex justify-around items-center w-full bg-[#1A1A1A] p-[120px] border border-b-0 border-Black_15 container-padding
              max-[1440px]:p-[80px] max-[500px]:flex-col max-[500px]:px-[16px] max-[500px]:py-[40px]">
                 <div>
                     <p className="bg-[#333333] font-Inter font-medium text-xl text-white py-[6px] px-[10px] w-max my-4 rounded
@@ -23,21 +21,18 @@ export default function Articles() {
                 </div>
                 <div>
                     <button className="flex items-center py-4 px-[18px] rounded-xl bg-[#141414] w-44
-                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center">View All Blogs <img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center max-[390px]:w-[262px]">View All Blogs <img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
                 </div>
             </div>
             {/* قسم الفلترة */}
-            <div className="border border-b-0 border-Black_15 w-full flex py-[50px] max-[1440px]:py-[40px]">
+            <div className="border border-b-0 border-Black_15 w-full flex py-[50px] max-[1440px]:py-[40px] container-padding">
                 <div className="flex flex-wrap justify-evenly items-center w-full">
                     {["All", "Healthcare", "Quantum Computing", "AI Ethics", "Space Exploration", "Biotechnology"].map((type) => (
                         <button
                             key={type}
-                            onClick={() => setSelectedType(type)}
+                            onClick={() => filterByType(type)}
                             className={`border border-Black_15 py-[30px] w-[249.33px] text-center rounded-lg mt-[15px] hover:bg-[#1A1A1A]
-                         max-[1440px]:w-[201.67px] max-[1440px]:py-[24px] lg:w-[163px] lg:py-[18px] ${selectedType === type
-                                    ? "bg-[#1A1A1A]"
-                                    : ""
-                                }`}
+                         max-[1440px]:w-[201.67px] max-[1440px]:py-[24px] lg:w-[163px] lg:py-[18px]`}
                         >
                             {type}
                         </button>
@@ -45,12 +40,13 @@ export default function Articles() {
                 </div>
             </div>
             {/* عرض المقالات */}
-            <div className="w-full border border-b-0 border-Black_15">
-                {filteredArticles.map((article) => (
+            <div className="w-full border border-b-0 border-Black_15 container-padding">
+                {filteredArticle.map((article) => (
                     <div className="w-full flex items-center justify-center h-[369px] border-y-[1px] border-Black_15 
-                      max-[1440px]:h-[291px] max-[1440px]:px-20 xl:px-8 lg:px-8 max-md:px-4 max-[500px]:h-[420px] max-[500px]:relative max-[500px]:items-start" >
+                      max-[1440px]:h-[291px] max-[1440px]:px-20 xl:px-8 lg:px-8 max-md:px-4 max-[500px]:h-[420px] max-[500px]:relative max-[500px]:items-start
+                      max-[390px]:flex-col " >
                         <div className="flex items-center w-[384px] 
-                          max-[1440px]:w-[305px] max-[500px]:w-[203px] max-[500px]:mt-[96px] max-[500px]:mr-[45px]">
+                          max-[1440px]:w-[305px] max-[500px]:w-[203px] max-[500px]:mt-[96px] max-[500px]:mr-[45px] max-[390px]:mt-[10px]">
                             <div>
                                 <img className="w-20 max-[1440px]:w-[60px] max-[500px]:w-[60px] max-w-none" src={article.profileImage} />
                             </div>
@@ -62,7 +58,8 @@ export default function Articles() {
                                   max-[1440px]:text-base max-[500px]:text-sm">{article.articleType}</p>
                             </div>
                         </div>
-                        <div className="w-[950px] max-[1440px]:w-[768px] max-md:w-[540px] max-[500px]:!w-[358px] max-[500px]:absolute max-[500px]:mt-[180px]">
+                        <div className="w-[950px] max-[1440px]:w-[768px] max-md:w-[540px] max-[500px]:!w-[358px] max-[500px]:absolute max-[500px]:mt-[180px] 
+                        max-[390px]:relative max-[390px]:!w-[262px] max-[390px]:mt-[20px]">
                             <p className="font-Inter font-semibold text-xl mb-[30px]
                               max-[1440px]:text-lg  max-[1440px]:mb-6 max-md:text-base max-md:mb-5 max-[500px]:text-base max-[500px]:mb-5">{article.publishDate}</p>
                             <p className="font-Inter font-semibold text-[26px] text-white leading-10 
@@ -88,18 +85,18 @@ export default function Articles() {
                             </div>
                         </div>
                         <div>
-                            <button className="flex items-center py-4 px-[18px] rounded-xl bg-[#141414] w-36
-                             max-[500px]:w-[140px] max-[500px]:mt-[102px]">View Blog <img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                           <Link to={`/blog/${article.id}`}>
+                           <button className="flex items-center py-4 px-[18px] rounded-xl bg-[#141414] w-36
+                             max-[500px]:w-[140px] max-[500px]:mt-[102px] max-[390px]:mt-[20px]" onClick={() => getArticleById(article.id)}>View Blog <img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                           </Link>
                         </div>
                     </div>
                 ))}
             </div>
 
             {/* حالة عدم وجود مقالات */}
-            {filteredArticles.length === 0 && (
-                <p className="text-center text-gray-500 mt-6">
-                    No articles found for "{selectedType}".
-                </p>
+            {filterByType.length === 0 && (
+                <NoData message="No Articles Found" />
             )}
         </section>
     );

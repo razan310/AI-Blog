@@ -1,8 +1,8 @@
 
 import CardSection from "../Components/RK_Hero/CardSection";
 import Hero from "../Components/RK_Hero/Hero";
-import Article from "../Components/Article/Article"
-import Testimonials from "../Components/Testimonials/Testimonials"
+import Article from "../Components/HH_Article/Article"
+import Testimonials from "../Components/HH_Testimonials/Testimonials"
 
 
 const HomePage = () => {

@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/AI-Blog" element={<HomePage />} />
           <Route path="/AI-Blog/news" element={<NewsPage />} />
-          <Route path="/AI-Blog/blog" element={<BlogOpenPage />} />
+          <Route path="/blog/:id" element={<BlogOpenPage />} />
           <Route path="/AI-Blog/podcasts" element={<PodcastsPage />} />
           <Route path="/AI-Blog/resources" element={<ResourcesPage />} />
           <Route path="/AI-Blog/Contact" element={<ContactPage />} />
