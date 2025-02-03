@@ -2,7 +2,7 @@
 
 import useStore from "../../Zustand/ArticlesStore/useArticlesStore"
 import { Link } from "react-router-dom";
-import NoData from "../NoData/NoData";
+import NoData from "../HH_NoData/NoData";
 
 
 export default function Articles() {
@@ -11,7 +11,7 @@ export default function Articles() {
 
     return (
         <section>
-            <div className="flex justify-around items-center w-full bg-[#1A1A1A] p-[120px] border border-b-0 border-Black_15 container-padding
+            <div className="flex justify-around items-center w-full bg-[#262626] p-[120px] border border-b-0 border-Black_15 container-padding
              max-[1440px]:p-[80px] max-[500px]:flex-col max-[500px]:px-[16px] max-[500px]:py-[40px]">
                 <div>
                     <p className="bg-[#333333] font-Inter font-medium text-xl text-white py-[6px] px-[10px] w-max my-4 rounded
@@ -31,7 +31,7 @@ export default function Articles() {
                         <button
                             key={type}
                             onClick={() => filterByType(type)}
-                            className={`border border-Black_15 py-[30px] w-[249.33px] text-center rounded-lg mt-[15px] hover:bg-[#1A1A1A]
+                            className={`border border-Black_15 py-[30px] w-[249.33px] text-center rounded-lg mt-[15px] hover:bg-[#1A1A1A] bg-[#141414]
                          max-[1440px]:w-[201.67px] max-[1440px]:py-[24px] lg:w-[163px] lg:py-[18px]`}
                         >
                             {type}

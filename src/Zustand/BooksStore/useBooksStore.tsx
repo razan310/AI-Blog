@@ -1,8 +1,13 @@
 import { create } from "zustand";
-import { books } from "./BookData";
+import { BookData, books } from "./BookData";
 
-const useStore = create(() => ({
-    articles: books,
+
+interface BookStore {
+  books: BookData[];
+  }
+  
+const useStore = create<BookStore>(() => ({
+  books: books,
 
 }))
 

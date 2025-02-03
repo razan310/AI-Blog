@@ -2,7 +2,7 @@
 import { useParams } from "react-router-dom";
 import useStore from "../../../Zustand/ArticlesStore/useArticlesStore";
 import { useState } from "react";
-import NoData from "../../NoData/NoData";
+import NoData from "../../HH_NoData/NoData";
 
 const InformationArticle = () => {
   const { id } = useParams();

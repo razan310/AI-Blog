@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-background text-text;
+    @apply bg-[#1A1A1A] text-text;
   }
 
   /* إضافة كلاس حاوية مع padding */

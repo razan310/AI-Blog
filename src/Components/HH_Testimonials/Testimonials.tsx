@@ -5,7 +5,7 @@ const Testimonials = () => {
   const {cardData} = useStore();
   return (
     <section>
-      <div className="flex justify-around items-center w-full bg-[#1A1A1A] p-[120px] border border-b-0 border-Black_15 container-padding
+      <div className="flex justify-around items-center w-full bg-[#262626] p-[120px] border border-b-0 border-Black_15 container-padding
              max-[1440px]:p-[80px] max-[500px]:flex-col max-[500px]:px-[16px] max-[500px]:py-[40px]">
         <div>
           <p className="bg-[#333333] font-Inter font-medium text-xl text-white py-[6px] px-[10px] w-max my-4 rounded
@@ -20,7 +20,7 @@ const Testimonials = () => {
       </div>
       <div className='py-10'>
         <div className="flex flex-wrap justify-center items-center w-full ">
-          {cardData.map((cardData: any) => (
+          {cardData.map((cardData) => (
             <div className='w-[465.33px] text-center flex justify-center items-center flex-col mt-20 ml-[120px] mr-[50px]
              max-[1440px]:w-[373.33px] max-[1440px]:mx-10 max-[1440px]:mt-[50px] max-[500px]:w-[358px] max-[500px]:mt-0 max-[500px]:ml-0 max-[500px]:mr-0'>
               <div className="flex justify-center items-center w-full 
@@ -36,9 +36,9 @@ const Testimonials = () => {
                      max-[1440px]:text-base max-[500px]:text-base">{cardData.ReaderResidence}</p>
                 </div>
               </div>
-              <div className='bg-[#1A1A1A] border border-Black_15 mt-[61px] rounded-xl
+              <div className='bg-[#262626] border border-Black_15 mt-[61px] rounded-xl
                max-[1440px]:mt-[49px] max-[500px]:mt-[49px]'>
-              <StarRating />
+              <StarRating rating={cardData.rating} />
                 <p className='font-Inter font-normal text-lg px-[30px] pt-[50px] pb-[30px]
                 max-[1440px]:text-base max-[1440px]:px-6 max-[1440px]:pt-10 max-[1440px]:pb-6 max-[500px]:px-0 max-[500px]:text-sm'>{cardData.ReaderOpinion}</p>
               </div>

@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import useStore, { useSyncSimilarArticles } from "../../../Zustand/ArticlesStore/useArticlesStore"
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import NotFoundPage from "../../../Pages/NotFoundPage";
-import NoData from "../../NoData/NoData";
+import NoData from "../../HH_NoData/NoData";
 
 
 const SimilarNews = () => {
@@ -19,7 +19,14 @@ const SimilarNews = () => {
     }
   }, [id, articles, setCurrentArticle]);
 
-  if (!currentArticle) return <NotFoundPage />;
+  if (!currentArticle) return <NotFoundPage />; 
+
+  function scrollTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+   })}
+
   return (
     <section className="bg-[#1A1A1A] container-padding py-[60px]">
       <div className=" text-white py-8  ">
@@ -56,8 +63,10 @@ const SimilarNews = () => {
                                 </button>
                                 <button className="py-2 px-4 border rounded-full border-Black_15 bg-[#1A1A1A] mr-[10px] flex hover:bg-gray-800 transition"><img src={article.shareicon} />{article.shares}</button>
                   </div>
+                  <Link to={`/blog/${article.id}`}>
                   <button className="flex items-center justify-center py-[14px] px-[18px] rounded-xl bg-[#141414] w-auto
-                    max-[1440px]:py-[14px] max-[1440px]:px-[16px]  max-[500px]:justify-center">Read More<img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                    max-[1440px]:py-[14px] max-[1440px]:px-[16px]  max-[500px]:justify-center " onClick={scrollTop}>Read More<img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -67,7 +76,7 @@ const SimilarNews = () => {
 
       {/* حالة عدم وجود مقالات */}
       {similarResults.length === 0 && (
-                <NoData message="No Similar Articles Found" />
+      <NoData message="No Similar Articles Found" />
             )}
     </section>
   )

@@ -12,6 +12,7 @@ export interface TestimonialsData {
     ReaderName: string;
     ReaderResidence: string;
     ReaderOpinion: string;
+    rating: number;
   }
 
 export const cardData: TestimonialsData[] = [
@@ -21,6 +22,7 @@ export const cardData: TestimonialsData[] = [
       ReaderName: "Sarah Thompson",
       ReaderResidence: "San Francisco, USA",
       ReaderOpinion: "The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.",
+      rating: 5,
     },
     {
       id: "2",
@@ -28,6 +30,7 @@ export const cardData: TestimonialsData[] = [
       ReaderName: "Raj Patel",
       ReaderResidence: "Mumbai, India",
       ReaderOpinion: "The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions.",
+      rating: 4,
     },
     {
       id: "3",
@@ -35,6 +38,7 @@ export const cardData: TestimonialsData[] = [
       ReaderName: "Emily Adams",
       ReaderResidence: "London, UK",
       ReaderOpinion: "The AI in healthcare reports have been an essential resource for our hospital. They highlight the latest innovations and best practices, improving patient care.",
+      rating: 3,
     },
     {
       id: "4",
@@ -42,6 +46,7 @@ export const cardData: TestimonialsData[] = [
       ReaderName: "Alan Jackson",
       ReaderResidence: "Houston, USA",
       ReaderOpinion: "The reports on space mining prospects have fueled my passion for space exploration. They provide a comprehensive view of what lies beyond Earth.",
+      rating: 2,
     },
     {
       id: "5",
@@ -49,6 +54,7 @@ export const cardData: TestimonialsData[] = [
       ReaderName: "Jessica Miller",
       ReaderResidence: "Boston, USA",
       ReaderOpinion: "The research papers on genomic breakthroughs have been a goldmine of information. They've shaped the direction of my research.",
+      rating: 2,
     },
     {
       id: "6",
@@ -56,5 +62,6 @@ export const cardData: TestimonialsData[] = [
       ReaderName: "Diego Lopez",
       ReaderResidence: "Barcelona, Spain",
       ReaderOpinion: "The ebooks on renewable energy strategies have given me the insights I needed to pivot our startup toward sustainability.",
+      rating: 3,
     },
   ]

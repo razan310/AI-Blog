@@ -3,6 +3,8 @@ import CardSection from "../Components/RK_Hero/CardSection";
 import Hero from "../Components/RK_Hero/Hero";
 import Article from "../Components/HH_Article/Article"
 import Testimonials from "../Components/HH_Testimonials/Testimonials"
+import FutureTechFeatures from "../Components/HH_FutureTechFeatures/FutureTechFeatures";
+import BookSection from "../Components/HH_Ebook/BookSection";
 
 
 const HomePage = () => {
@@ -16,11 +18,12 @@ const HomePage = () => {
         resourceText="Explore 1000+ resources"
         resourceDescription="Over 1,000 articles on emerging tech trends and breakthroughs."
       />
-      <CardSection/>
+      <CardSection />
 
-    
-   <Article/>
-   <Testimonials/>
+      <FutureTechFeatures />
+      <Article />
+      <BookSection />
+      <Testimonials />
 
     </div>
   );
