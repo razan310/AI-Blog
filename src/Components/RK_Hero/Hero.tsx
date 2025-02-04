@@ -46,11 +46,11 @@ const Hero: React.FC<HeroProps> = ({
   resourceDescription,
 }) => {
   return (
-    <div className="h-auto flex flex-col lg:flex-row md:p12 text-white">
+    <div className="h-auto flex flex-col lg:flex-row text-white mt-[103px]">
       {/* النصوص والعدادات */}
       <div className="flex flex-col lg:w-7/12 lg:h-[755px]">
         {/* النصوص */}
-        <div className="container-padding flex-grow flex flex-col justify-center my-4 md:my-8 2xl:pr-12 2xl:pl-40">
+        <div className="container-padding flex-grow flex flex-col justify-center my-4 md:mt-8 2xl:pr-12 2xl:pl-40">
           <p className="font-Kumbh font-medium text-xl lg:text-2xl text-myGray text-[#666666]">
             {subtitle}
           </p>
