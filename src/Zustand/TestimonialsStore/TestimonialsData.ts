@@ -1,9 +1,9 @@
-import profile1 from "/AI-Blog/src/assets/images/HomePage/Profile1.png";
-import profile2 from "/AI-Blog/src/assets/images/HomePage/Profile2.png";
-import profile3 from "/AI-Blog/src/assets/images/HomePage/Profile3.png";
-import profile4 from "/AI-Blog/src/assets/images/HomePage/Profile4.png";
-import profile5 from "/AI-Blog/src/assets/images/HomePage/Profile5.png";
-import profile6 from "/AI-Blog/src/assets/images/HomePage/Profile6.png";
+import profile1 from "../../assets/images/HomePage/Profile1.png";
+import profile2 from "../../assets/images/HomePage/Profile2.png";
+import profile3 from "../../assets/images/HomePage/Profile3.png";
+import profile4 from "../../assets/images/HomePage/Profile4.png";
+import profile5 from "../../assets/images/HomePage/Profile5.png";
+import profile6 from "../../assets/images/HomePage/Profile6.png";
 
 
 export interface TestimonialsData {

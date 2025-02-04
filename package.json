@@ -1,7 +1,7 @@
 {
   "name": "graduation-project",
   "private": true,
-  "homepage": "https://razan310.github.io/AI-Blog/",
+  "homepage": "https://hussam633hasan.github.io/AI-Blog/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -27,7 +27,7 @@
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
-    "gh-pages": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "globals": "^15.11.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
