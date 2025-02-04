@@ -1,5 +1,6 @@
 import ContentSection from "./ContentSection";
-
+import icon from "../../assets/icon/Icon(4).svg";
+import icon1 from "../../assets/icon/Icon(5).svg";
 const FutureTechFeatures = () => {
     return (
         <section>
@@ -14,7 +15,7 @@ const FutureTechFeatures = () => {
             </div>
             <div className=" container-padding">
                 <ContentSection
-                    icon="/AI-Blog/src/assets/icon/Icon(4).svg"
+                    icon={icon}
                     title="Future Technology Blog"
                     description="Stay informed with our blog section dedicated to future technology."
                     features={[
@@ -25,7 +26,7 @@ const FutureTechFeatures = () => {
                     ]}
                 />
                 <ContentSection
-                    icon="/AI-Blog/src/assets/icon/Icon(5).svg"
+                    icon={icon1}
                     title="Research Insights Blogs"
                     description="Dive deep into future technology concepts with our research section."
                     features={[

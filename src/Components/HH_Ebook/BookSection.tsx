@@ -6,7 +6,7 @@ import profile1 from "./../../assets/images/HomePage/Profile10.png";
 import profile2 from "./../../assets/images/HomePage/Profile11.png";
 import profile3 from "./../../assets/images/HomePage/Profile9.png";
 import profile4 from "./../../assets/images/HomePage/Profile7.png";
-
+import arrowicon from "../../assets/icon/Icon.svg";
 const BookSection: React.FC = () => {
   const { books } = useBookStore();
 
@@ -24,7 +24,7 @@ const BookSection: React.FC = () => {
         </div>
         <div>
           <button className="flex items-center py-4 px-[18px] rounded-xl bg-[#141414] w-52
-                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center max-[390px]:w-[262px]">View All Resources<img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center max-[390px]:w-[262px]">View All Resources<img className=" ml-[10px]" src={arrowicon} alt="ArrowUpRight" width="20" height="20" /></button>
         </div>
       </div>
       <div className="container-padding">
@@ -44,7 +44,7 @@ const BookSection: React.FC = () => {
               <div>
                 <Link to={book.downloadLink}>
                   <button className="flex items-center justify-center py-4 px-[18px] rounded-xl bg-[#141414] w-full my-[55px]
-                  max-[500px]:mt-6 max-[500px]:mb-5 max-[500px]:py-[18px]">Download Now<img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                  max-[500px]:mt-6 max-[500px]:mb-5 max-[500px]:py-[18px]">Download Now<img className=" ml-[10px]" src={arrowicon} alt="ArrowUpRight" width="20" height="20" /></button>
                 </Link>
               </div>
               <div className="flex items-center py-8 px-[30px] w-max bg-[#141414] border border-Black_15 rounded-[13px]

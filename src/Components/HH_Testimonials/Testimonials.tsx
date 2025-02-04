@@ -1,6 +1,6 @@
 import useStore from '../../Zustand/TestimonialsStore/useTestimonialsStore';
 import StarRating from './StarRating'
-
+import arrowicon from "../../assets/icon/Icon.svg";
 const Testimonials = () => {
   const {cardData} = useStore();
   return (
@@ -15,7 +15,7 @@ const Testimonials = () => {
         </div>
         <div>
           <button className="flex items-center py-4 px-[18px] rounded-xl bg-[#141414]
-                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center max-[390px]:w-[262px]">View All Testimonials<img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center max-[390px]:w-[262px]">View All Testimonials<img className=" ml-[10px]" src={arrowicon} alt="ArrowUpRight" width="20" height="20" /></button>
         </div>
       </div>
       <div className='py-10'>

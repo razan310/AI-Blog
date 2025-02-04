@@ -1,8 +1,8 @@
-import book1 from "./../../assets/images/HomePage/resources1.png"
-import book2 from "./../../assets/images/HomePage/resources2.png"
-import viewsicon from "./../../assets/icon/Icon(10).svg";
-import logo1 from "./../../assets/icon/Icon(9).svg"
-import logo2 from "./../../assets/icon/Icon(11).svg"
+import book1 from "../../assets/images/HomePage/resources1.png"
+import book2 from "../../assets/images/HomePage/resources2.png"
+import viewsicon from "../../assets/icon/Icon(10).svg";
+import logo1 from "../../assets/icon/Icon(9).svg"
+import logo2 from "../../assets/icon/Icon(11).svg"
 
 
 export interface BookData{

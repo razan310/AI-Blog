@@ -1,24 +1,24 @@
-import articl1 from "./../../assets/images/BlogOpenPage/SimilarNews1.png";
-import articl2 from "./../../assets/images/BlogOpenPage/SimilarNews2.png";
-import articl3 from "./../../assets/images/BlogOpenPage/SimilarNews1.png";
-import articl4 from "./../../assets/images/BlogOpenPage/SimilarNews3.png";
-import articl5 from "./../../assets/images/NewsPage/Climate Action.png";
-import articl6 from "./../../assets/images/BlogOpenPage/hero.png";
-import likeicon from "./../../assets/icon/Icon(6).svg";
-import commenticon from "./../../assets/icon/Icon(7).svg";
-import shareicon from "./../../assets/icon/Icon(8).svg";
-import viewsicon from "./../../assets/icon/Icon (22).svg";
-import arrowicon from "./../../assets/icon/Icon(23).svg";
-import profile1 from "./../../assets/images/HomePage/Profile1.png";
-import profile2 from "./../../assets/images/HomePage/Profile2.png";
-import profile3 from "./../../assets/images/HomePage/Profile3.png";
-import profile4 from "./../../assets/images/HomePage/Profile4.png";
-import profile5 from "./../../assets/images/HomePage/Profile5.png";
-import profile6 from "./../../assets/images/HomePage/Profile6.png";
-import profile7 from "./../../assets/images/HomePage/Profile7.png";
-import profile8 from "./../../assets/images/HomePage/Profile8.png";
-import profile10 from "./../../assets/images/HomePage/Profile10.png";
-import profile11 from "./../../assets/images/HomePage/Profile11.png";
+import articl1 from "../../assets/images/BlogOpenPage/SimilarNews1.png";
+import articl2 from "../../assets/images/BlogOpenPage/SimilarNews2.png";
+import articl3 from "../../assets/images/BlogOpenPage/SimilarNews1.png";
+import articl4 from "../../assets/images/BlogOpenPage/SimilarNews3.png";
+import articl5 from "../../assets/images/NewsPage/Climate Action.png";
+import articl6 from "../../assets/images/BlogOpenPage/hero.png";
+import likeicon from "../../assets/icon/Icon(6).svg";
+import commenticon from "../../assets/icon/Icon(7).svg";
+import shareicon from "../../assets/icon/Icon(8).svg";
+import viewsicon from "../../assets/icon/Icon (22).svg";
+import arrowicon from "../../assets/icon/Icon(23).svg";
+import profile1 from "../../assets/images/HomePage/Profile1.png";
+import profile2 from "../../assets/images/HomePage/Profile2.png";
+import profile3 from "../../assets/images/HomePage/Profile3.png";
+import profile4 from "../../assets/images/HomePage/Profile4.png";
+import profile5 from "../../assets/images/HomePage/Profile5.png";
+import profile6 from "../../assets/images/HomePage/Profile6.png";
+import profile7 from "../../assets/images/HomePage/Profile7.png";
+import profile8 from "../../assets/images/HomePage/Profile8.png";
+import profile10 from "../../assets/images/HomePage/Profile10.png";
+import profile11 from "../../assets/images/HomePage/Profile11.png";
 
 export interface ArticleSection {
   title: string; // عنوان القسم

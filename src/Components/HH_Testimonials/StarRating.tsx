@@ -1,4 +1,4 @@
-
+import staricon from "../../assets/icon/Shape.svg";
 
 const StarRating = ({ rating }: { rating: number }) => {
 
@@ -9,7 +9,7 @@ const StarRating = ({ rating }: { rating: number }) => {
           <img
             key={i}
             className={`w-6 max-[1440px]:w-5 max-[390px]:w-5 ${i < rating ? "opacity-100" : "opacity-30"}`}
-            src="./AI-Blog/src/assets/icon/Shape.svg"
+            src={staricon}
             alt="star"
           />
         ))}

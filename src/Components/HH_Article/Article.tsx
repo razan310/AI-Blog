@@ -3,7 +3,7 @@
 import useStore from "../../Zustand/ArticlesStore/useArticlesStore"
 import { Link } from "react-router-dom";
 import NoData from "../HH_NoData/NoData";
-
+import arrowicon from "../../assets/icon/Icon.svg";
 
 export default function Articles() {
     const {  filteredArticle, incrementLikes , getArticleById, filterByType} = useStore();
@@ -21,7 +21,7 @@ export default function Articles() {
                 </div>
                 <div>
                     <button className="flex items-center py-4 px-[18px] rounded-xl bg-[#141414] w-44
-                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center max-[390px]:w-[262px]">View All Blogs <img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                    max-[1440px]:py-[14px] max-[1440px]:px-[16px] max-[500px]:mt-[30px] max-[500px]:w-[358px] max-[500px]:justify-center max-[390px]:w-[262px]">View All Blogs <img className=" ml-[10px]" src={arrowicon} alt="ArrowUpRight" width="20" height="20" /></button>
                 </div>
             </div>
             {/* قسم الفلترة */}
@@ -87,7 +87,7 @@ export default function Articles() {
                         <div>
                            <Link to={`/blog/${article.id}`}>
                            <button className="flex items-center py-4 px-[18px] rounded-xl bg-[#141414] w-36
-                             max-[500px]:w-[140px] max-[500px]:mt-[102px] max-[390px]:mt-[20px]" onClick={() => getArticleById(article.id)}>View Blog <img className=" ml-[10px]" src="/AI-Blog/src/assets/icon/Icon.svg" alt="ArrowUpRight" width="20" height="20" /></button>
+                             max-[500px]:w-[140px] max-[500px]:mt-[102px] max-[390px]:mt-[20px]" onClick={() => getArticleById(article.id)}>View Blog <img className=" ml-[10px]" src={arrowicon} alt="ArrowUpRight" width="20" height="20" /></button>
                            </Link>
                         </div>
                     </div>
