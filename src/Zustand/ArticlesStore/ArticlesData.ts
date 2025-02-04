@@ -9,6 +9,7 @@ import commenticon from "../../assets/icon/Icon(7).svg";
 import shareicon from "../../assets/icon/Icon(8).svg";
 import viewsicon from "../../assets/icon/Icon (22).svg";
 import arrowicon from "../../assets/icon/Icon(23).svg";
+import ArrowUpRight from "../../assets/icon/Icon.svg";
 import profile1 from "../../assets/images/HomePage/Profile1.png";
 import profile2 from "../../assets/images/HomePage/Profile2.png";
 import profile3 from "../../assets/images/HomePage/Profile3.png";
@@ -33,6 +34,7 @@ export interface Article {
   commenticon: string; // ايقونة التعليق
   shareicon: string; // ايقونة المشاركة
   viewsicon: string; // ايقونةالمشاهدات
+  ArrowUpRight:string;
   arrowicon: string; // ايقونةالمشاهدات
   articleType: string; // نوع المقالة
   publishDate: string; // تاريخ كتابة المقالة
@@ -68,6 +70,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl6,
     title: "The Rise of Artificial Intelligence in Healthcare",
     description: "An in-depth look into how AI is shaping the future.",
@@ -106,6 +109,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl1,
     title: "Understanding Quantum Bits",
     description: "Exploring the basics of quantum mechanics in computing.",
@@ -143,6 +147,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl2,
     title: "Quantum Computing in Cryptography",
     description:
@@ -177,6 +182,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl3,
     title: "The Future of Quantum Internet",
     description: "Examining the potential of quantum networks.",
@@ -210,6 +216,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl4,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -243,6 +250,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl5,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -276,6 +284,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl5,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -310,6 +319,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl6,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -343,6 +353,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl5,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -376,6 +387,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl1,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -410,6 +422,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl3,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -443,6 +456,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl4,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -476,6 +490,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl5,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -510,6 +525,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl5,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -543,6 +559,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl1,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
@@ -576,6 +593,7 @@ export const articles: Article[] = [
     shareicon: shareicon,
     viewsicon: viewsicon,
     arrowicon: arrowicon,
+    ArrowUpRight: ArrowUpRight,
     articleImage: articl2,
     title: "The Ethical Dilemmas of AI",
     description: "Exploring the moral challenges posed by AI development.",
